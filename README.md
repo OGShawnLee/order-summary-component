@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [To be added](https://your-solution-url.com)
+- Solution URL: [Right here!](https://www.frontendmentor.io/solutions/order-summary-card-with-vanilla-typescript-windicss-vite-SklWogd75m)
 - Live Site URL: [Deployed on Vercel](https://order-summary-component-pi-five.vercel.app/)
 
 ## My process
