@@ -2,12 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/public/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Order Summary Card</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body
+    class="min-h-screen | flex items-center justify-center | bg-pale-blue-100 font-redhat text-slate-800"
+  >
+    <div class="absolute inset-0">
+      <img class="hidden xs:inline" src="/pattern-background-desktop.svg" alt="" />
+      <img class="xs:hidden" src="/pattern-background-mobile.svg" alt="" />
+    </div>
+    <main class="z-10">
+      <div
+        class="max-w-xs sm:max-w-sm | flex flex-col | bg-white rounded-xl shadow-xl overflow-hidden"
+      >
+        <div>
+          <img src="/illustration-hero.svg" alt="" />
+        </div>
+        <div class="py-8 px-6 sm:px-12 | flex flex-col gap-4 items-center">
+          <h1 class="text-2xl font-black text-slate-900">Order Summary</h1>
+          <p class="text-sm sm:text-base font-medium text-center">
+            You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere
+            you like!
+          </p>
+          <div
+            class="w-full p-3 my-2 | flex items-center gap-3 | bg-pale-blue-50 rounded-xl text-sm"
+          >
+            <div>
+              <img src="/icon-music.svg" alt="" />
+            </div>
+            <div class="flex flex-col">
+              <span class="font-black text-slate-900"> Annual Plan </span>
+              <span> $59.99/year </span>
+            </div>
+            <button class="ml-auto | font-semibold text-bright-blue underline hover:opacity-80">
+              Change
+            </button>
+          </div>
+          <div class="flex flex-col gap-5 w-full">
+            <button
+              class="py-3 | bg-bright-blue rounded-xl shadow-xl text-sm font-bold text-white hover:opacity-80"
+            >
+              Proceed to Payment
+            </button>
+            <button class="text-sm font-bold text-slate-800 hover:text-bright-blue">
+              Cancel Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
